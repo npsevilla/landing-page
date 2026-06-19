@@ -1,6 +1,7 @@
-/* * {
-  border: 1px solid purple;
-} */
+* {
+  /* border: 1px solid transparent; */
+  /* border: 1px solid rebeccapurple; */
+}
 
 body {
   margin: 0;
@@ -105,6 +106,7 @@ button {
 
 .upper-mid-items {
   display: flex;
+  justify-content: center;
   gap: 38px;
 }
 
@@ -129,4 +131,76 @@ button {
   font-size: smaller;
   text-align: center;
   color: gray;
+}
+
+.mid-section {
+  background-color: #e5e7eb;
+  display: flex;
+  justify-content: center;
+}
+
+.quote {
+  font-size: 36px;
+  width: 570px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.quote-text {
+  font-size: 26px;
+  font-style: italic;
+  font-weight: 300;
+  color: #1f2937;
+}
+
+.quote-author {
+  font-size: 18px;
+  font-weight: 600;
+  text-align: right;
+  padding-right: 30px;
+}
+
+.lower-mid-section {
+  display: flex;
+  justify-content: center;
+}
+
+.call-to-action {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  width: 900px;
+  background-color: #3882f6;
+  color: #f9faf8;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  gap: 100px;
+}
+
+.call-to-action-main-text {
+  font-weight: bold;
+}
+
+.call-to-action-subtext {
+  font-size: small;
+  color: lightgray;
+}
+
+.call-to-action button {
+  border: 1px solid white;
+}
+
+.bottom-section {
+  background-color: #1f2937;
+  color: #e5e7eb;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
 }
