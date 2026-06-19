@@ -1,13 +1,14 @@
+/* * {
+  border: 1px solid purple;
+} */
+
 body {
   margin: 0;
   padding: 0;
   font-family: Roboto, Arial, sans-serif;
-}
-
-div {
-  /* uncomment to see flexbox layout */
-  /* border: 2px solid gray; */
-  border: none;
+  display: flex;
+  flex: 0 0 1500px;
+  justify-content: center;
 }
 
 button {
@@ -24,19 +25,18 @@ button {
   font-weight: 600;
 }
 
-.top {
+.top-section {
   background-color: #1f2937;
 }
 
 .header {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   height: 70px;
 }
 
 .header-logo {
-  flex-basis: 40%;
   font-size: 24px;
   font-weight: 800;
   color: #f9faf8;
@@ -45,8 +45,6 @@ button {
 
 .header-links {
   display: flex;
-  justify-content: flex-end;
-  flex-basis: 50%;
   gap: 2em;
   padding-right: 100px;
 }
@@ -58,16 +56,16 @@ button {
 
 .hero {
   display: flex;
-  flex: 1;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 100px;
+  gap: 50px;
 }
 
 .hero-text {
   display: flex;
   flex-direction: column;
-  flex-basis: 50%;
-  padding: 10px 50px 10px 10px;
+  flex: 0 0 460px;
+  gap: 10px;
 }
 
 .hero-main-text {
@@ -80,18 +78,55 @@ button {
   font-size: 18px;
   line-height: 1.5;
   color: #e5e7eb;
-  margin: 8px 0px;
-}
-
-.hero-signup-button {
-  padding-top: 10px;
 }
 
 .hero-image {
   display: flex;
-  flex-basis: 50%;
+  flex: 0 0 600px;
   justify-content: center;
   align-items: center;
-  border: none;
   background-color: #5f6c7a;
+}
+
+.upper-mid-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 50px;
+}
+
+.upper-mid-title {
+  font-size: 26px;
+  font-weight: 900;
+  color: #1f2937;
+}
+
+.upper-mid-items {
+  display: flex;
+  gap: 38px;
+}
+
+.upper-mid-item {
+  display: flex;
+  flex: 0 0 100px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+
+.upper-mid-image {
+  width: 120px;
+  height: 120px;
+  border: 3px solid #3882f6;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1); /* The drop shadow that makes it "float" */
+}
+
+.upper-mid-subtext {
+  font-size: smaller;
+  text-align: center;
+  color: gray;
 }
